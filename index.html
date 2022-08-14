@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fontawesome.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mundo Doce</title>
+  </head>
+  <body>
+    <header>
+      <h1>A melhor de Pernambuco!</h1>
+      <button type="button" class="open-menu" onclick="openMenu()">
+        <i class="far fa-bars"></i>
+      </button>
+    </header>
+
+    <main>
+      <section class="filtersContainer">
+        <div id="botoesContainer">
+          <button type="button" class="close-menu" onclick="closeMenu()">
+            <i class="fal fa-times"></i>
+          </button>
+          <button class="estiloGeralBotoes estiloGeralBotoes--filter">
+            Todos Produtos
+          </button>
+          <button class="estiloGeralBotoes estiloGeralBotoes--filter">
+            Bolos
+          </button>
+          <button class="estiloGeralBotoes estiloGeralBotoes--filter">
+            Brownie
+          </button>
+          <button class="estiloGeralBotoes estiloGeralBotoes--filter">
+            Copo da felicidade
+          </button>
+        </div>
+
+        <form class="containerBuscaPorNome">
+          <input
+            type="search"
+            placeholder="Pesquisar por"
+            class="campoBuscaPorNome"
+          />
+          <button
+            id="botaoPesquisar"
+            class="estiloGeralBotoes estiloGeralBotoes--botaoBuscaPorNome"
+          >
+            <img src="./src/img/search.png" alt="lupa" />
+          </button>
+        </form>
+      </section>
+
+      <div class="container--2">
+        <section class="containerVitrine">
+          <div class="containerListaProdutos">
+            <ul id="listaProdutos"></ul>
+          </div>
+        </section>
+        <aside class="carrinho">
+          <div class="carrinho__header">
+            <img
+              src="./src/img/carrinho icon.png"
+              alt="ícone do carrinho de compras"
+            />
+            <h3>Carrinho</h3>
+          </div>
+          <div class="carrinho__body">
+            <div class="carrinho__vazio">
+              <img src="./src/img/sacolaVazia.png" alt="sacola de compras" />
+              <span>Por enquanto não temos produtos no carrinho</span>
+            </div>
+            <ul id="carrinhoItens"></ul>
+          </div>
+          <footer class="carrinho__footer">
+            <div class="quantity">
+              <span>Quantidade</span>
+              <span class="carrinho__quantidade">0</span>
+            </div>
+            <div class="total">
+              <span>Total</span>
+              <span class="carrinho__total">R$ 0,00</span>
+            </div>
+          </footer>
+        </aside>
+      </div>
+    </main>
+    <script src="./src/js/products.js"></script>
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>

@@ -390,7 +390,7 @@ body.menu-expanded .container--2 {
   display: none;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 767px) {
   main {
     margin: 0 auto;
     max-width: 375px;
@@ -436,7 +436,7 @@ body.menu-expanded .container--2 {
   }
 
   .containerBuscaPorNome {
-    margin-top: 2rem;
+    margin: 15px 15px 1px 1px;
   }
 
   .containerBuscaPorNome input {
@@ -475,6 +475,8 @@ body.menu-expanded .container--2 {
     max-width: 100%;
     width: 100%;
     text-align: center;
+    
+    padding-right: 12px;
     margin-top: 20px;
   }
 
